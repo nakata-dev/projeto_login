@@ -6,6 +6,8 @@
     <title>Login e Senha</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media_query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <main>
@@ -17,10 +19,22 @@
                 <h1>Login</h1>
                 <p>Seja bem vindo(a). Faça login para acessar sua conta e poder fazer as cofigurações no seu ambiente.</p>
 
-                <form action="login.php" method="post">
-                    <input type="text" name="usuario" placeholder="Usuário" required>
-                    <input type="password" name="senha" placeholder="Senha" required>
-                    <button type="submit">Entrar</button>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required maxlength="30" size="17px" autocomplete="email">
+                        <label for="email">E-mail</label>
+
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required minlength="8" maxlength="30" size="17px" autocomplete="current-password">
+                        <label for="senha">Senha</label>
+                    </div>
+                    <a href="#">Esqueci minha senha</a>
+                    <br>
+                    <input type="submit" value="Entrar">
+                </form>
             </div>
         </section>
     </main>

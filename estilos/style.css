@@ -59,3 +59,15 @@ section#login > div#formulario{
     padding: 10px;
     display:block;
 }
+
+div#formulario h1{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+div#formulario > p{
+    text-align: justify;
+    text-indent: 15px;
+    padding: 0px 5px;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
