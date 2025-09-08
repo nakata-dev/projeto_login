@@ -37,6 +37,9 @@ section#login{
     border-radius: 20px;
     overflow: hidden; /* para esconder o que ultrapassar a borda arredondada */
     box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+
+    transition: width 0.3s height .3s; /* animação suave para mudanças de largura e altura */
+    transition-timing-function: ease; /* tipo de animação */
 }
 
 /*Ocupa toda a largura disponível: Um elemento com display: block sempre se expande horizontalmente para ocupar 100% do espaço de seu contêiner, da esquerda à direita. Ele não permite que outros elementos fiquem ao seu lado na mesma linha.*/
