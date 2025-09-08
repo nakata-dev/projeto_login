@@ -42,7 +42,7 @@ section#login{
 /*Ocupa toda a largura disponível: Um elemento com display: block sempre se expande horizontalmente para ocupar 100% do espaço de seu contêiner, da esquerda à direita. Ele não permite que outros elementos fiquem ao seu lado na mesma linha.*/
 
 section#login > div#imagem{
-    background: #5f2c82 url('../img/metal.jpg');
+    background: #5f2c82 url('../img/arq_ref.jpg');
     height: 200px;
     background-position: left bottom;
     background-size: cover;
