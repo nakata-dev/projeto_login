@@ -3,5 +3,56 @@
 /*
 Paleta de Cores:
 verde: #49a09d
-lilás: #5f2c82
+lilás: #5f2c82*/
 
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color:#5f2c82;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+main{
+    position: relative; /* para o posicionamento relativo do filho */
+    width: 100vw;
+    height: 100vh;
+}
+section#login{ 
+    position: absolute;/* para o posicionamento absoluto do filho */
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden; /* para esconder o que ultrapassar a borda arredondada */
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+
+/*Ocupa toda a largura disponível: Um elemento com display: block sempre se expande horizontalmente para ocupar 100% do espaço de seu contêiner, da esquerda à direita. Ele não permite que outros elementos fiquem ao seu lado na mesma linha.*/
+
+section#login > div#imagem{
+    background: #5f2c82 url('../img/metal.jpg');
+    height: 200px;
+    background-position: left bottom;
+    background-size: cover;
+    display:block;
+}
+
+
+/*Começa em uma nova linha: Cada elemento display: block é forçado a começar em uma nova linha. Ele "empurra" o elemento que estava antes dele para cima e o elemento que viria depois para a linha de baixo.*/
+
+section#login > div#formulario{
+    padding: 10px;
+    display:block;
+}
